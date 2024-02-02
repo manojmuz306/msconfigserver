@@ -1,6 +1,3 @@
-spring:
-  application:
-    name: CLOUD-CONFIG-APP
 eureka:
   client:
     serviceUrl:
