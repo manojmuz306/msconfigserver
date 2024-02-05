@@ -12,6 +12,7 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
   cloud:
     vault:
       host: 127.0.0.1
