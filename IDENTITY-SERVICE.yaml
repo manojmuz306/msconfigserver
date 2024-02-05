@@ -3,9 +3,6 @@ server:
 spring:  
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/spring-security
-    username: ${IDENTITY.datasource.username}
-    password: ${IDENTITY.datasource.password}
   jpa:
     hibernate:
       ddl-auto: create-drop 
