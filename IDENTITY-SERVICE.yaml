@@ -1,2 +1,14 @@
 server:
   port: 9898
+  cloud:
+    vault:
+      uri: http://localhost:8200
+      token: hvs.UQwqTNtxjnUGzIfHYti3nZxs
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, refresh, env
+  endpoint:
+    env:
+      enabled: true      
