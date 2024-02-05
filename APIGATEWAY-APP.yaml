@@ -1,0 +1,24 @@
+server:
+  port: 9999
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: EXCHANGE-APP
+          uri: lb://EXCHANGE-APP
+          predicates:
+           - Path=/api/v1/exchange/**
+           
+        - id: TRADE-APP
+          uri: lb://TRADE-APP
+          predicates:
+           - Path=/api/v1/trade/**   
+           
+        - id: identity-service
+          uri: lb://IDENTITY-SERVICE
+          predicates:
+           - Path=/auth/**   
+  config:
+    import:
+    - configserver:http://localhost:8085
+       
