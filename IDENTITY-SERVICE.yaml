@@ -1,13 +1,6 @@
 server:
   port: 9898
 spring:  
-  cloud:
-    vault:
-      host: 127.0.0.1
-      port: 8200
-      scheme: http
-      authentication: TOKEN
-      token: hvs.UQwqTNtxjnUGzIfHYti3nZxs
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/spring-security
