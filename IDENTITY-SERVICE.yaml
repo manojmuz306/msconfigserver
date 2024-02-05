@@ -1,5 +1,6 @@
 server:
   port: 9898
+spring:  
   cloud:
     vault:
       uri: http://localhost:8200
