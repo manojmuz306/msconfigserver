@@ -12,9 +12,7 @@ spring:
     password: ${IDENTITY.datasource.password}
   jpa:
     hibernate:
-      ddl-auto: create-drop
-      naming:
-        implicit-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: create-drop 
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect    
