@@ -11,7 +11,14 @@ spring:
       ddl-auto: create-drop 
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect    
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  cloud:
+    vault:
+      host: 127.0.0.1
+      port: 8200
+      scheme: http
+      authentication: TOKEN
+      token: hvs.UQwqTNtxjnUGzIfHYti3nZxs     
 management:
   endpoints:
     web:
